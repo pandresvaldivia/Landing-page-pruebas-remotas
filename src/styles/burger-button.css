@@ -1,0 +1,99 @@
+.burgerButton {
+	block-size: 2.5rem;
+	inline-size: 2.5rem;
+	border: none;
+	background: transparent;
+	z-index: 1;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	cursor: pointer;
+}
+
+.burgerButton-line {
+	position: relative;
+	inline-size: 1.25rem;
+	block-size: 0.1875rem;
+	background: var(--black);
+	border-radius: 0.25rem;
+	-webkit-border-radius: 0.25rem;
+	-moz-border-radius: 0.25rem;
+	-ms-border-radius: 0.25rem;
+	-o-border-radius: 0.25rem;
+	transition: all 0.3s;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	-o-transition: all 0.3s;
+}
+
+.burgerButton-line::before {
+	content: '';
+	display: block;
+	inline-size: 1.75rem;
+	block-size: 0.1875rem;
+	background: var(--black);
+	position: absolute;
+	inset-inline-end: 0;
+	transform: translateY(-0.375rem);
+	-webkit-transform: translateY(-0.375rem);
+	-moz-transform: translateY(-0.375rem);
+	-ms-transform: translateY(-0.375rem);
+	-o-transform: translateY(-0.375rem);
+	border-radius: 0.25rem;
+	-webkit-border-radius: 0.25rem;
+	-moz-border-radius: 0.25rem;
+	-ms-border-radius: 0.25rem;
+	-o-border-radius: 0.25rem;
+	transition: all 0.3s;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	-o-transition: all 0.3s;
+}
+
+.burgerButton-line::after {
+	content: '';
+	display: block;
+	inline-size: 0.875rem;
+	position: absolute;
+	inset-inline-end: 0;
+	block-size: 0.1875rem;
+	background: var(--black);
+	transform: translateY(0.375rem);
+	-webkit-transform: translateY(0.375rem);
+	-moz-transform: translateY(0.375rem);
+	-ms-transform: translateY(0.375rem);
+	-o-transform: translateY(0.375rem);
+	border-radius: 0.25rem;
+	-webkit-border-radius: 0.25rem;
+	-moz-border-radius: 0.25rem;
+	-ms-border-radius: 0.25rem;
+	-o-border-radius: 0.25rem;
+	transition: all 0.3s;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	-o-transition: all 0.3s;
+}
+
+.burgerButton.is-pressed .burgerButton-line {
+	inline-size: 0;
+}
+
+.burgerButton.is-pressed .burgerButton-line::before {
+	transform: rotate(-45deg);
+	-webkit-transform: rotate(-45deg);
+	-moz-transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
+	-o-transform: rotate(-45deg);
+}
+
+.burgerButton.is-pressed .burgerButton-line::after {
+	inline-size: 1.75rem;
+	transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+}

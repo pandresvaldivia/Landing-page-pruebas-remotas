@@ -1,0 +1,21 @@
+.header {
+	display: flex;
+	block-size: 6.6875rem;
+	box-sizing: border-box;
+	padding-inline-start: 1.5rem;
+	padding-inline-end: 1rem;
+	padding-block-start: 0.9375rem;
+	padding-block-end: 1.5rem;
+	position: relative;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.header-logo {
+	margin: 0;
+	z-index: 1;
+}
+
+.header-logo img {
+	vertical-align: middle;
+}

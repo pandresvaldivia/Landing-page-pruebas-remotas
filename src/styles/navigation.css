@@ -1,0 +1,44 @@
+.navigation {
+	position: absolute;
+	inset: 0;
+	padding-block-start: 9.6875rem;
+	block-size: 100vh;
+	min-block-size: 40rem;
+	box-sizing: border-box;
+	background: linear-gradient(
+		180deg,
+		rgba(255, 255, 255, 0.22) -12.2%,
+		rgba(0, 225, 198, 0.06) -12.2%,
+		rgba(74, 234, 214, 0.334196) -12.2%,
+		#ffffff 149.51%
+	);
+	padding-block-end: 1.5rem;
+	clip-path: circle(0 at 100% 0);
+	transition: clip-path 0.5s;
+	-webkit-transition: clip-path 0.5s;
+	-moz-transition: clip-path 0.5s;
+	-ms-transition: clip-path 0.5s;
+	-o-transition: clip-path 0.5s;
+}
+
+.navigation.is-visible {
+	clip-path: circle(max(150vh, 150vw) at 100% 0);
+}
+
+.navigation-content {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	block-size: 100%;
+	max-block-size: 44.875rem;
+}
+
+.navigation-login {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	gap: 1rem;
+	padding-inline-end: 1.5rem;
+	padding-inline-start: 1.5rem;
+	margin-block-start: 4rem;
+}

@@ -23,6 +23,7 @@
 }
 
 :root {
+	--black: #000000;
 	--primary: #6246ea;
 	--secondary: #d1d1e9;
 	--secondary: #112d57;
@@ -36,9 +37,16 @@
 	--secondheadline: 700 3.5rem/4.0625rem var(--fontBase);
 	--title: 400 2.25rem/2.625rem var(--fontBase);
 	--subheading: 400 1.5rem/2.375rem var(--fontBase);
-	--button: semi bold 1.125rem/1.25rem var(--fontBase);
+	--button: 600 1.125rem/1.25rem var(--fontBase);
 	--subtitle: 400 1.125rem/1.75rem var(--fontBase);
 	--paragraphe: 400 1.1875rem/1.875rem var(--fontBase);
 	--link: 400 1.125rem/1.25rem var(--fontBase);
 	--mobilemenu: 400 1.125rem/1.25rem var(--fontBase);
+}
+
+.body {
+	margin: 0;
+	font: var(--subheading);
+	min-inline-size: 22.5rem;
+	min-block-size: 40rem;
 }

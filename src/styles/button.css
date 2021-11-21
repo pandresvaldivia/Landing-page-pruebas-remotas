@@ -1,0 +1,20 @@
+.button {
+	text-decoration: none;
+	background: var(--lightbackground);
+	font: var(--button);
+	color: var(--firsttext);
+	padding-block-end: 1rem;
+	padding-block-start: 1rem;
+	border-radius: 5.3125rem;
+	-webkit-border-radius: 5.3125rem;
+	-moz-border-radius: 5.3125rem;
+	-ms-border-radius: 5.3125rem;
+	-o-border-radius: 5.3125rem;
+	padding-inline-end: 46px;
+	padding-inline-start: 46px;
+}
+
+.button.is-purple {
+	background: var(--primary);
+	color: var(--lightbackground);
+}
