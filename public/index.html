@@ -52,7 +52,7 @@
 			sizes="180x180"
 			href="../src/assets/favicon/apple-icon-180x180.png"
 		/>
-		<link20071822
+		<link
 			rel="icon"
 			type="image/png"
 			sizes="192x192"
@@ -87,6 +87,7 @@
 		<!-- Styles -->
 		<link rel="stylesheet" href="../src/styles/main.css" />
 		<link rel="stylesheet" href="../src/styles/icon.css" />
+		<link rel="stylesheet" href="../src/styles/wrapper.css" />
 		<link rel="stylesheet" href="../src/styles/hero.css" />
 		<link rel="stylesheet" href="../src/styles/header.css" />
 		<link rel="stylesheet" href="../src/styles/burger-button.css" />
@@ -97,67 +98,103 @@
 		<link rel="stylesheet" href="../src/styles/social-media.css" />
 	</head>
 	<body class="body">
-		<div class="wrapper">
-			<div class="hero">
-				<header class="header">
-					<figure class="header-logo">
-						<a href="./index.html" aria-current="page">
-							<img
-								src="../src/assets/images/logo.png"
-								srcset="
-									../src/assets/images/logo.png    1x,
-									../src/assets/images/logo-2x.png 2x
-								"
-								height="48"
-								width="48"
-								alt="Logo de Puebas remotas"
-							/>
-						</a>
-					</figure>
-					<nav class="navigation" aria-label="Menu principal">
-						<div class="navigation-content">
-							<div class="navigation-block">
-								<ul class="menu">
-									<li><a class="menu-item" href="#">Productos</a></li>
-									<li><a class="menu-item" href="#">Sobre nosotros</a></li>
-									<li><a class="menu-item" href="#">Contacto</a></li>
-								</ul>
-								<div class="navigation-login">
-									<a class="button is-purple" href="#">Empiece gratis</a>
-									<a class="button" href="#">Prueba la demo</a>
-								</div>
-							</div>
-							<div class="navigation-block">
-								<div class="socialMedia">
-									<ul class="socialMedia-list">
-										<li class="socialMedia-item">
-											<a href="#" aria-label="Twitter"
-												><i class="icon-twitter" aria-hidden="true"></i
-											></a>
-										</li>
-										<li class="socialMedia-item">
-											<a href="#" aria-label="Github"
-												><i class="icon-github" aria-hidden="true"></i
-											></a>
-										</li>
-										<li class="socialMedia-item">
-											<a href="#" aria-label="Linkedin"
-												><i class="icon-linkedin" aria-hidden="true"></i
-											></a>
-										</li>
-									</ul>
-								</div>
+		<div class="hero">
+			<header class="header">
+				<figure class="header-logo">
+					<a href="./index.html" aria-current="page">
+						<img
+							src="../src/assets/images/logo.png"
+							srcset="
+								../src/assets/images/logo.png    1x,
+								../src/assets/images/logo-2x.png 2x
+							"
+							height="48"
+							width="48"
+							alt="Logo de Puebas remotas"
+						/>
+					</a>
+				</figure>
+				<nav class="navigation" aria-label="Menu principal">
+					<div class="navigation-content">
+						<div class="navigation-block">
+							<ul class="menu">
+								<li><a class="menu-item" href="#">Productos</a></li>
+								<li><a class="menu-item" href="#">Sobre nosotros</a></li>
+								<li><a class="menu-item" href="#">Contacto</a></li>
+							</ul>
+							<div class="navigation-login">
+								<a class="button is-purple" href="#">Empiece gratis</a>
+								<a class="button" href="#">Prueba la demo</a>
 							</div>
 						</div>
-					</nav>
+						<div class="navigation-block">
+							<div class="socialMedia">
+								<ul class="socialMedia-list">
+									<li class="socialMedia-item">
+										<a
+											href="https://twitter.com/PandresDev"
+											rel="noreferrer"
+											target="_blank"
+											aria-label="Twitter"
+											><i class="icon-twitter" aria-hidden="true"></i
+										></a>
+									</li>
+									<li class="socialMedia-item">
+										<a
+											href="https://github.com/pandresvaldivia"
+											rel="noreferrer"
+											target="_blank"
+											aria-label="Github"
+											><i class="icon-github" aria-hidden="true"></i
+										></a>
+									</li>
+									<li class="socialMedia-item">
+										<a
+											href="https://www.linkedin.com/in/pablo-andr%C3%A9s-valdivia-cuzcano-891bb5170/"
+											rel="noreferrer"
+											target="_blank"
+											aria-label="Linkedin"
+											><i class="icon-linkedin" aria-hidden="true"></i
+										></a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</nav>
+				<!-- <div class="login">
+					<a class="button is-purple" href="#">Empiece gratis</a>
+					<a class="button" href="#">Prueba la demo</a>
+				</div> -->
+				<button class="burgerButton" aria-label="Desplegar menu">
+					<div class="burgerButton-line"></div>
+				</button>
+			</header>
+			<div class="wrapper">
+				<section class="hero-content">
+					<div class="hero-details">
+						<h1 class="hero-title">Pruebe rápidamente cualquier cosa</h1>
+						<p class="hero-description">
+							Impulse la toma de decisiones con pruebas rápidas y remotas
+						</p>
+					</div>
 					<div class="login">
 						<a class="button is-purple" href="#">Empiece gratis</a>
 						<a class="button" href="#">Prueba la demo</a>
 					</div>
-					<button class="burgerButton" aria-label="Desplegar menu">
-						<div class="burgerButton-line"></div>
-					</button>
-				</header>
+					<figure class="hero-image">
+						<img
+							src="../src/assets/images/preview.png"
+							srcset="
+								../src/assets/images/preview.png       360w,
+								../src/assets/images/preview-large.png 540w
+							"
+							width="360"
+							height="250"
+							alt="Miniatura de pruebas remotas"
+						/>
+					</figure>
+				</section>
 			</div>
 		</div>
 		<script src="../src/index.js" type="module"></script>

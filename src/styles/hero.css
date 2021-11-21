@@ -1,9 +1,53 @@
 .hero {
-	block-size: 31.625rem;
-	background: linear-gradient(
-		180deg,
-		rgba(255, 255, 255, 0.22) 7.62%,
-		rgba(0, 225, 198, 0.06) 25.5%,
-		#ffffff 70.92%
-	);
+	background-image: url('../assets/images/bg-img-1.png'),
+		url('../assets/images/bg-img-2.png'),
+		linear-gradient(
+			180deg,
+			rgba(255, 255, 255, 0.22) 20%,
+			rgba(0, 225, 198, 0.3) 35%,
+			#ffffff 99.85%
+		);
+	background-position: left -200px top 250px, right -230px top 550px, 0% 0%;
+	background-repeat: no-repeat;
+	padding-block-end: 5.125rem;
+}
+
+.hero-content {
+	margin-block-start: 5.625rem;
+	display: flex;
+	flex-direction: column;
+	gap: 2.8125rem;
+	text-align: center;
+}
+
+.hero-details {
+	padding-block-end: 2.5rem;
+	padding-block-start: 2.5rem;
+	padding-inline-end: 1rem;
+	padding-inline-start: 1rem;
+}
+
+.hero-title {
+	color: var(--secondary);
+	font: var(--thirdheadline);
+	letter-spacing: 0.2px;
+	margin: 0;
+	margin-block-end: 2.375rem;
+}
+
+.hero-description {
+	margin: 0;
+}
+
+.hero-image {
+	margin: 0;
+	max-inline-size: 1180px;
+	margin-inline-end: auto;
+	margin-inline-start: auto;
+}
+
+.hero-image img {
+	inline-size: 100%;
+	block-size: auto;
+	vertical-align: middle;
 }

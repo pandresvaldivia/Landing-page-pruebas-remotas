@@ -9,9 +9,10 @@
 		180deg,
 		rgba(255, 255, 255, 0.22) -12.2%,
 		rgba(0, 225, 198, 0.06) -12.2%,
-		rgba(74, 234, 214, 0.334196) -12.2%,
+		rgba(74, 234, 214, 0.5) -12.2%,
 		#ffffff 149.51%
 	);
+	background-color: #ffffff;
 	padding-block-end: 1.5rem;
 	clip-path: circle(0 at 100% 0);
 	transition: clip-path 0.5s;

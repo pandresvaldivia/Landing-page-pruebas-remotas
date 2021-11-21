@@ -35,6 +35,7 @@
 	--fontBase: 'Inter', sans-serif;
 	--headline: 700 4.5rem/4.875rem var(--fontBase);
 	--secondheadline: 700 3.5rem/4.0625rem var(--fontBase);
+	--thirdheadline: 700 50px/4.0625rem var(--fontBase);
 	--title: 400 2.25rem/2.625rem var(--fontBase);
 	--subheading: 400 1.5rem/2.375rem var(--fontBase);
 	--button: 600 1.125rem/1.25rem var(--fontBase);
