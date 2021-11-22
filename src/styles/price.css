@@ -1,0 +1,35 @@
+.price {
+	display: flex;
+	flex-direction: column;
+	gap: 1.5rem;
+	align-items: center;
+}
+
+.price-amount {
+	margin: 0;
+	color: var(--lighttext);
+	font: var(--headline);
+	display: flex;
+	align-items: center;
+}
+
+.price-amount span:last-of-type {
+	font: var(--subtitle);
+	padding: 0.625rem;
+}
+
+.price-button {
+	color: var(--lighttext);
+	background: var(--primary);
+	font: var(--button);
+	text-decoration: none;
+	padding-inline-end: 3rem;
+	padding-inline-start: 3rem;
+	padding-block-end: 1rem;
+	padding-block-start: 1rem;
+	border-radius: 5.3125rem;
+	-webkit-border-radius: 5.3125rem;
+	-moz-border-radius: 5.3125rem;
+	-ms-border-radius: 5.3125rem;
+	-o-border-radius: 5.3125rem;
+}

@@ -1,0 +1,23 @@
+.footer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-block-start: 70px;
+	padding-block-end: 60px;
+	gap: 5.4375rem;
+}
+
+.footer-logo {
+	text-align: center;
+	margin: 0;
+}
+
+.footer-logo img {
+	block-size: 48px;
+	inline-size: 48px;
+	vertical-align: middle;
+}
+
+.footer-phrase {
+	font: var(--subtitle);
+}

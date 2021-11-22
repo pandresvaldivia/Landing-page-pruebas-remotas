@@ -100,6 +100,11 @@
 		<link rel="stylesheet" href="../src/styles/feature.css" />
 		<link rel="stylesheet" href="../src/styles/testimonial.css" />
 		<link rel="stylesheet" href="../src/styles/card.css" />
+		<link rel="stylesheet" href="../src/styles/payment.css" />
+		<link rel="stylesheet" href="../src/styles/plan.css" />
+		<link rel="stylesheet" href="../src/styles/price.css" />
+		<link rel="stylesheet" href="../src/styles/footer.css" />
+		<link rel="stylesheet" href="../src/styles/footer-nav.css" />
 	</head>
 	<body class="body">
 		<div class="hero">
@@ -293,7 +298,76 @@
 					</div>
 				</div>
 			</section>
+			<section class="payment">
+				<article class="payment-content">
+					<div class="plan">
+						<h2 class="plan-title">Profesional</h2>
+						<p class="plan-description">
+							Aporta conocimientos prácticos a todo el equipo
+						</p>
+					</div>
+					<div class="price">
+						<p class="price-amount"><span>$25</span><span>/mes</span></p>
+						<a class="price-button" href="#">Empezar</a>
+					</div>
+				</article>
+			</section>
 		</main>
+		<footer class="footer">
+			<figure class="footer-logo">
+				<a href="./index.html" aria-current="page">
+					<img
+						src="../src/assets/images/logo.png"
+						srcset="
+							../src/assets/images/logo.png    1x,
+							../src/assets/images/logo-2x.png 2x
+						"
+						height="48"
+						width="48"
+						alt="Logo de Puebas remotas"
+					/>
+				</a>
+				<figcaption class="footer-phrase">Don't quit.</figcaption>
+			</figure>
+			<nav class="footerNav" aria-label="Menu secundario">
+				<ul class="footerNav-menu">
+					<li class="footerNav-item"><a href="#">Productos</a></li>
+					<li class="footerNav-item"><a href="#">Sobre nosotros</a></li>
+					<li class="footerNav-item"><a href="#">Contacto</a></li>
+				</ul>
+			</nav>
+			<div class="socialMedia">
+				<ul class="socialMedia-list">
+					<li class="socialMedia-item">
+						<a
+							href="https://twitter.com/PandresDev"
+							rel="noreferrer"
+							target="_blank"
+							aria-label="Twitter"
+							><i class="icon-twitter" aria-hidden="true"></i
+						></a>
+					</li>
+					<li class="socialMedia-item">
+						<a
+							href="https://github.com/pandresvaldivia"
+							rel="noreferrer"
+							target="_blank"
+							aria-label="Github"
+							><i class="icon-github" aria-hidden="true"></i
+						></a>
+					</li>
+					<li class="socialMedia-item">
+						<a
+							href="https://www.linkedin.com/in/pablo-andr%C3%A9s-valdivia-cuzcano-891bb5170/"
+							rel="noreferrer"
+							target="_blank"
+							aria-label="Linkedin"
+							><i class="icon-linkedin" aria-hidden="true"></i
+						></a>
+					</li>
+				</ul>
+			</div>
+		</footer>
 		<script src="../src/index.js" type="module"></script>
 	</body>
 </html>
