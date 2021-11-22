@@ -10,7 +10,7 @@
 	background-position: left -200px top 250px, right -230px top 550px, 0% 0%;
 	background-repeat: no-repeat;
 	padding-block-end: 5.125rem;
-	animation: fluid 1s infinite;
+	animation: fluidHero 3s ease-in-out infinite alternate;
 	-webkit-animation: fluidHero 3s ease-in-out infinite alternate;
 }
 
