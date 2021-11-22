@@ -1,0 +1,22 @@
+.demo-content {
+	padding-block-end: 3.875rem;
+	padding-block-start: 4.5rem;
+}
+
+.demo-details {
+	text-align: center;
+	padding-block-end: 4.3125rem;
+	padding-inline-end: 1rem;
+	padding-inline-start: 1rem;
+}
+
+.demo-title {
+	font: var(--thirdheadline);
+	color: var(--firsttext);
+	margin: 0;
+	margin-block-end: 1.75rem;
+}
+
+.demo-description {
+	margin: 0;
+}

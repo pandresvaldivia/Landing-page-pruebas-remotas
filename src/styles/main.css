@@ -48,6 +48,7 @@
 .body {
 	margin: 0;
 	font: var(--subheading);
+	color: var(--secondtext);
 	min-inline-size: 22.5rem;
 	min-block-size: 40rem;
 }

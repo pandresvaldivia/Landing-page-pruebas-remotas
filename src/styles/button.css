@@ -12,9 +12,15 @@
 	-o-border-radius: 5.3125rem;
 	padding-inline-end: 46px;
 	padding-inline-start: 46px;
+	text-align: center;
 }
 
 .button.is-purple {
 	background: var(--primary);
 	color: var(--lightbackground);
+}
+
+.button.is-edged {
+	border: 2px solid var(--primary);
+	color: var(--primary);
 }

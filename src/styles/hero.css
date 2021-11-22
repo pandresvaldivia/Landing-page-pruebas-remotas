@@ -25,10 +25,10 @@
 	padding-block-start: 2.5rem;
 	padding-inline-end: 1rem;
 	padding-inline-start: 1rem;
+	color: var(--secondary);
 }
 
 .hero-title {
-	color: var(--secondary);
 	font: var(--thirdheadline);
 	letter-spacing: 0.2px;
 	margin: 0;
