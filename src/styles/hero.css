@@ -10,6 +10,8 @@
 	background-position: left -200px top 250px, right -230px top 550px, 0% 0%;
 	background-repeat: no-repeat;
 	padding-block-end: 5.125rem;
+	animation: fluid 1s infinite;
+	-webkit-animation: fluidHero 3s ease-in-out infinite alternate;
 }
 
 .hero-content {
@@ -50,4 +52,10 @@
 	inline-size: 100%;
 	block-size: auto;
 	vertical-align: middle;
+}
+
+@keyframes fluidHero {
+	to {
+		background-position: left -180px top 200px, right -200px top 570px, 0% 0%;
+	}
 }

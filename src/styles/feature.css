@@ -1,0 +1,70 @@
+.feature {
+	padding-block-start: 6.25rem;
+	padding-block-end: 6.25rem;
+}
+
+.feature.bg-secondary {
+	background-image: url('../assets/images/bg-img-7.png');
+	background-position: right -273px top 54px;
+	background-repeat: no-repeat;
+	animation: fluidBgSecondary 3s ease-in-out infinite alternate;
+	-webkit-animation: fluidBgSecondary 3s ease-in-out infinite alternate;
+}
+
+.feature.bg-primary {
+	background-image: url('../assets/images/bg-img-8.png');
+	background-position: left -211px top 54px;
+	background-repeat: no-repeat;
+	animation: fluidBgPrimary 3s ease-in-out infinite alternate;
+	-webkit-animation: fluidBgPrimary 3s ease-in-out infinite alternate;
+}
+
+.feature-details {
+	text-align: center;
+	padding-block-start: 3.75rem;
+	padding-inline-end: 1rem;
+	padding-inline-start: 1rem;
+	display: flex;
+	flex-direction: column;
+	gap: 1.75rem;
+}
+
+.feature-title {
+	color: var(--firsttext);
+	font: var(--title);
+	margin: 0;
+}
+
+.feature-description {
+	margin: 0;
+}
+
+.feature-image {
+	margin: 0;
+}
+
+.feature-link {
+	text-decoration: none;
+	color: var(--primary);
+	text-transform: uppercase;
+	padding: 0.625rem;
+	font: var(--link);
+}
+
+.feature-image img {
+	vertical-align: middle;
+	inline-size: 100%;
+	block-size: auto;
+}
+
+@keyframes fluidBgSecondary {
+	to {
+		background-position: right -293px top 74px;
+	}
+}
+
+@keyframes fluidBgPrimary {
+	to {
+		background-position: left -231px top 30px;
+	}
+}
