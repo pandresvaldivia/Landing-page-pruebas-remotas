@@ -6,3 +6,10 @@
 	margin-inline-end: auto;
 	margin-inline-start: auto;
 }
+
+@media screen and (min-width: 768px) {
+	.login {
+		inline-size: auto;
+		margin: 0;
+	}
+}

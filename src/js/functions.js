@@ -4,6 +4,7 @@ function menuHandle() {
 	const isPressed = $burgerBtn.classList.toggle('is-pressed');
 
 	if (isPressed) {
+		window.scrollTo(0, 0);
 		$navigation.classList.add('is-visible');
 		$body.style.overflowY = 'hidden';
 	} else {

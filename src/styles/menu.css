@@ -25,3 +25,19 @@
 .menu-item:hover {
 	font-size: 2.375rem;
 }
+
+@media screen and (min-width: 768px) {
+	.menu {
+		flex-direction: row;
+		gap: 1.875rem;
+	}
+
+	.menu-item {
+		font: var(--link);
+		padding: 0.625rem;
+	}
+
+	.menu-item:hover {
+		font-size: 1.25rem;
+	}
+}

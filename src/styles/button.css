@@ -10,8 +10,8 @@
 	-moz-border-radius: 5.3125rem;
 	-ms-border-radius: 5.3125rem;
 	-o-border-radius: 5.3125rem;
-	padding-inline-end: 46px;
-	padding-inline-start: 46px;
+	padding-inline-end: 2.875rem;
+	padding-inline-start: 2.875rem;
 	text-align: center;
 	border: none;
 }
@@ -24,4 +24,10 @@
 .button.is-edged {
 	border: 2px solid var(--primary);
 	color: var(--primary);
+}
+
+@media screen and (min-width: 768px) {
+	/* .button {
+		inline-size: 224px;
+	} */
 }

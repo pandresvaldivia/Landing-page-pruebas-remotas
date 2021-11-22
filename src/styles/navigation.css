@@ -43,3 +43,23 @@
 	padding-inline-start: 1.5rem;
 	margin-block-start: 4rem;
 }
+
+@media screen and (min-width: 768px) {
+	.navigation {
+		background: none;
+		clip-path: none;
+		position: static;
+		padding-block-start: 0;
+		min-block-size: 0;
+		block-size: auto;
+		padding: 0;
+	}
+
+	.navigation-block:last-of-type {
+		display: none;
+	}
+
+	.navigation-login {
+		display: none;
+	}
+}
