@@ -2,6 +2,7 @@
 	text-align: center;
 	color: var(--lighttext);
 	padding: 0.625rem;
+	inline-size: 20.75rem;
 }
 
 .plan-title {
@@ -13,4 +14,11 @@
 .plan-description {
 	margin: 0;
 	font: var(--paragraphe);
+}
+
+@media screen and (min-width: 960px) {
+	.plan {
+		text-align: left;
+		inline-size: auto;
+	}
 }

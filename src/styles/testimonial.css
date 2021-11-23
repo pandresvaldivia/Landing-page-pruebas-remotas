@@ -32,3 +32,19 @@
 		background-position: left -85px top 245px, right -370px top 500px;
 	}
 }
+
+@media screen and (min-width: 1024px) {
+	.testimonial {
+		background-image: url('../assets/images/bg-img-5.png'),
+			url('../assets/images/bg-img-6.png');
+		padding-block-start: 10.5625rem;
+		padding-block-end: 6.75rem;
+		background-position: left 140px top 482px, right -225px top 578px;
+	}
+
+	@keyframes fluidTestimonial {
+		to {
+			background-position: left 100px top 510px, right -190px top 540px;
+		}
+	}
+}
