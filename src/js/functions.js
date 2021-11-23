@@ -21,4 +21,15 @@ function resetMenu() {
 	}
 }
 
-export { menuHandle, resetMenu };
+const featureObserver = new IntersectionObserver(
+	(entries) => {
+		if (entries[0].isIntersecting) {
+			entries[0].target.classList.add('is-visible');
+		}
+	},
+	{
+		threshold: 0.25,
+	}
+);
+
+export { menuHandle, resetMenu, featureObserver };

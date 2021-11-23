@@ -36,6 +36,7 @@
 	flex-direction: column;
 	gap: 1.75rem;
 	max-inline-size: 36.875rem;
+	align-items: center;
 }
 
 .feature-title {
@@ -51,6 +52,31 @@
 .feature-image {
 	margin: 0;
 	max-inline-size: 32.25rem;
+	transform: scale(0);
+	-webkit-transform: scale(0);
+	-moz-transform: scale(0);
+	-ms-transform: scale(0);
+	-o-transform: scale(0);
+	will-change: transform;
+	transition: transform 0.5s;
+	-webkit-transition: transform 0.5s;
+	-moz-transition: transform 0.5s;
+	-ms-transition: transform 0.5s;
+	-o-transition: transform 0.5s;
+}
+
+.feature-image.is-visible {
+	transform: scale(1);
+	-webkit-transform: scale(1);
+	-moz-transform: scale(1);
+	-ms-transform: scale(1);
+	-o-transform: scale(1);
+}
+
+.feature-image img {
+	vertical-align: middle;
+	inline-size: 100%;
+	block-size: auto;
 }
 
 .feature-link {
@@ -59,12 +85,25 @@
 	text-transform: uppercase;
 	padding: 0.625rem;
 	font: var(--link);
+	position: relative;
 }
 
-.feature-image img {
-	vertical-align: middle;
-	inline-size: 100%;
-	block-size: auto;
+.feature-link::after {
+	content: '';
+	position: absolute;
+	display: block;
+	block-size: 2px;
+	background: var(--primary);
+	inline-size: 0;
+	transition: inline-size 0.3s;
+	-webkit-transition: inline-size 0.3s;
+	-moz-transition: inline-size 0.3s;
+	-ms-transition: inline-size 0.3s;
+	-o-transition: inline-size 0.3s;
+}
+
+.feature-link:hover::after {
+	inline-size: calc(100% - 1.25rem);
 }
 
 @keyframes fluidBgSecondary {
@@ -96,6 +135,7 @@
 	.feature-details {
 		padding: 0;
 		text-align: left;
+		align-items: flex-start;
 	}
 
 	.feature.bg-secondary {
