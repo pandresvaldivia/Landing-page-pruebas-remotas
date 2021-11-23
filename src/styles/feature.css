@@ -1,6 +1,15 @@
 .feature {
+	display: flex;
+	justify-content: center;
 	padding-block-start: 6.25rem;
 	padding-block-end: 6.25rem;
+}
+
+.feature-content {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 3.75rem;
 }
 
 .feature.bg-secondary {
@@ -21,12 +30,12 @@
 
 .feature-details {
 	text-align: center;
-	padding-block-start: 3.75rem;
 	padding-inline-end: 1rem;
 	padding-inline-start: 1rem;
 	display: flex;
 	flex-direction: column;
 	gap: 1.75rem;
+	max-inline-size: 36.875rem;
 }
 
 .feature-title {
@@ -41,6 +50,7 @@
 
 .feature-image {
 	margin: 0;
+	max-inline-size: 32.25rem;
 }
 
 .feature-link {
@@ -59,12 +69,64 @@
 
 @keyframes fluidBgSecondary {
 	to {
-		background-position: right -293px top 74px;
+		background-position: right -300px top 34px;
 	}
 }
 
 @keyframes fluidBgPrimary {
 	to {
-		background-position: left -231px top 30px;
+		background-position: left -240px top 24px;
+	}
+}
+
+@media screen and (min-width: 960px) {
+	.feature-content {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		gap: 0;
+		padding-inline-end: 1.25rem;
+		padding-inline-start: 1.25rem;
+	}
+
+	.feature:nth-of-type(odd) .feature-content {
+		flex-direction: row-reverse;
+	}
+
+	.feature-details {
+		padding: 0;
+		text-align: left;
+	}
+
+	.feature.bg-secondary {
+		background-image: url('../assets/images/bg-img-3.png');
+		background-position: left -248px top 54px;
+		animation: fluidBgPrimary 3s ease-in-out infinite alternate;
+		-webkit-animation: fluidBgPrimary 3s ease-in-out infinite alternate;
+	}
+
+	.feature.bg-primary {
+		background-image: url('../assets/images/bg-img-4.png');
+		background-position: right -230px top 54px;
+		animation: fluidBgSecondary 3s ease-in-out infinite alternate;
+		-webkit-animation: fluidBgSecondary 3s ease-in-out infinite alternate;
+	}
+
+	@keyframes fluidBgSecondary {
+		to {
+			background-position: right -180px top 34px;
+		}
+	}
+
+	@keyframes fluidBgPrimary {
+		to {
+			background-position: left -180px top 24px;
+		}
+	}
+}
+
+@media screen and (min-width: 1240px) {
+	.feature-content {
+		gap: 3.75rem;
 	}
 }
