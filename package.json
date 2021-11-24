@@ -10,9 +10,17 @@
 		"predeploy": "npm run build",
 		"deploy": "gh-pages -d dist"
 	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/pandresvaldivia/Landing-page-pruebas-remotas.git"
+	},
 	"keywords": [],
-	"author": "",
+	"author": "Andres Valdivia Cuzcano",
 	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/pandresvaldivia/Landing-page-pruebas-remotas/issues"
+	},
+	"homepage": "https://pandresvaldivia.github.io/Landing-page-pruebas-remotas/",
 	"devDependencies": {
 		"@babel/core": "^7.16.0",
 		"@babel/plugin-transform-runtime": "^7.16.4",
