@@ -22,10 +22,6 @@
 	-o-transition: font-size 0.3s;
 }
 
-.menu-item:hover {
-	font-size: 37px;
-}
-
 @media screen and (min-width: 768px) {
 	.menu {
 		flex-direction: row;
