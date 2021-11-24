@@ -1,0 +1,22 @@
+{
+	"testimonials": [
+		{
+			"author": "Jason Lopez",
+			"position": "Cofundador de Sector 9",
+			"photo": "avatar-jason.png",
+			"quote": "Me gusta mucho la interfaz y el concepto de la app. Además, tiene varias opciones que son muy útiles."
+		},
+		{
+			"author": "Marco Cortez",
+			"position": "Netnet",
+			"photo": "avatar-marco.png",
+			"quote": "La mejor app que he probado. Si sabes explotar todas sus funcionalidades, se aprovecha mucho mejor."
+		},
+		{
+			"author": "Harry Hurst",
+			"position": "Netnet",
+			"photo": "avatar-harry.png",
+			"quote": "I really like the interface and the concept of the app. Also, it has several options that are very useful."
+		}
+	]
+}

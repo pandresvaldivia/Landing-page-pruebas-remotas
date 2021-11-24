@@ -2,6 +2,14 @@
 	padding: 10px;
 	max-inline-size: 30.875rem;
 	box-sizing: border-box;
+	backdrop-filter: blur(0.5rem);
+	-webkit-backdrop-filter: blur(0.5rem);
+	border-radius: 1.5rem;
+	-webkit-border-radius: 1.5rem;
+	-moz-border-radius: 1.5rem;
+	-ms-border-radius: 1.5rem;
+	-o-border-radius: 1.5rem;
+	flex-shrink: 0;
 }
 
 .card-content {
@@ -10,6 +18,8 @@
 	flex-direction: column;
 	align-items: center;
 	gap: 3.75rem;
+	block-size: 100%;
+	justify-content: space-between;
 }
 
 .card-quote {
