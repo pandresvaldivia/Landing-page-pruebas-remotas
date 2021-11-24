@@ -1,24 +1,29 @@
 .button {
-	text-decoration: none;
 	background: var(--lightbackground);
-	font: var(--button);
+	border-radius: 5.3125rem;
+	border: none;
 	color: var(--firsttext);
+	cursor: pointer;
+	font: var(--button);
 	padding-block-end: 1rem;
 	padding-block-start: 1rem;
-	border-radius: 5.3125rem;
-	-webkit-border-radius: 5.3125rem;
-	-moz-border-radius: 5.3125rem;
-	-ms-border-radius: 5.3125rem;
-	-o-border-radius: 5.3125rem;
 	padding-inline-end: 2.875rem;
 	padding-inline-start: 2.875rem;
 	text-align: center;
-	border: none;
-	cursor: pointer;
-	-webkit-user-select: none;
-	-moz-user-select: none;
-	-ms-user-select: none;
+	text-decoration: none;
+	transition: transform 0.3s;
 	user-select: none;
+	-moz-border-radius: 5.3125rem;
+	-moz-transition: transform 0.3s;
+	-moz-user-select: none;
+	-ms-border-radius: 5.3125rem;
+	-ms-transition: transform 0.3s;
+	-ms-user-select: none;
+	-o-border-radius: 5.3125rem;
+	-o-transition: transform 0.3s;
+	-webkit-border-radius: 5.3125rem;
+	-webkit-transition: transform 0.3s;
+	-webkit-user-select: none;
 }
 
 .button.is-purple {
@@ -29,4 +34,12 @@
 .button.is-edged {
 	border: 2px solid var(--primary);
 	color: var(--primary);
+}
+
+.button:hover {
+	transform: scale(1.03);
+	-webkit-transform: scale(1.03);
+	-moz-transform: scale(1.03);
+	-ms-transform: scale(1.03);
+	-o-transform: scale(1.03);
 }

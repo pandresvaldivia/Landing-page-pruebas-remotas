@@ -63,6 +63,10 @@
 	-moz-transition: transform 0.5s;
 	-ms-transition: transform 0.5s;
 	-o-transition: transform 0.5s;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
 }
 
 .feature-image.is-visible {
